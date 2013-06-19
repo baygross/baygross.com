@@ -1,0 +1,16 @@
+<div id='tweeting' class='panel'>
+  <a class="twitter-timeline" href="https://twitter.com/baygross" data-widget-id="347057074804510720" data-chrome="nofooter transparent noboders noheader">Tweets by @baygross</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script>
+  
+  function resizeStream(){
+    var h = $('#tweeting iframe').contents().find(".h-feed").height() + 60;
+    $('#tweeting iframe').height(h+'px');
+    $('#tweeting iframe').contents().find(".stream").height(h);
+  }
+  
+  $(document).ready(function(){ setInterval(resizeStream, 100); });
+  
+  </script>
+</div>
+

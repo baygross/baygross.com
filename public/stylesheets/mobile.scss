@@ -1,0 +1,36 @@
+.mobile{
+  overflow:auto;
+  
+  aside#leftcol, section#maincol{
+  	height: auto;
+  }
+
+  aside{
+    position:static;
+  	width: 100%;
+  	background-color: $green;
+  	border-bottom: 1px solid #AAA;
+    border-right:none;
+    
+    img#atom{
+      display:none;
+    }
+
+   .info{
+    	position: static;
+      float:left;
+    }
+  }
+
+  section#maincol{
+  	position: static;
+    width:100%;
+    overflow:auto;
+  	padding: 20px 30px;
+  	border-top: 1px solid #888;
+    border-bottom:none;
+  }
+  
+  
+  
+}

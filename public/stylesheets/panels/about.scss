@@ -1,0 +1,36 @@
+#about{
+
+  ul{
+  	margin-top: 50px;	
+  	padding-left: 0px;
+  	list-style-type: none;
+  }
+
+  li{
+    	margin-top: 10px;
+      padding-left:105px;
+      &.bigspacer{
+        margin-top: 50px;
+      }
+  }
+
+  li span{
+  	color: #888;
+  	text-indent:-105px;
+  	display: inline-block;
+  }
+
+  a{
+  	color: #0060b7;
+  	text-decoration: none;
+    @include transition(color .1s);
+    
+    &:hover{
+  	color: #003362;
+    }
+  }
+  
+}
+
+
+
