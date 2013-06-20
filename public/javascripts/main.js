@@ -60,7 +60,7 @@ function handleWindowResize(){
   // switch out of mobile
   if ( $(window).width() >= 750 && $('body').hasClass('mobile') ){
     $('body').removeClass('mobile');
-    var h = 190 + $('#leftcol .info.active').height();
+    var h = 210 + $('#leftcol .info:visible').height();
     $('#leftcol').css('minHeight', h+'px');
   }
 }
