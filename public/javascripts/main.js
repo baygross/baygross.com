@@ -25,6 +25,7 @@ $(document).ready(function(){
 // when page loads, display correct panel and push state to history
 function initPanelOnLoad(){
   var panel = location.pathname.slice(1,100).replace(/\//g,'');
+  panel = (panel === '' ? 'about' : panel);
   var anchor = location.hash.slice(1,100);
   history.replaceState({panel:panel, anchor:anchor}, '');
   displayPanel( panel, anchor );
