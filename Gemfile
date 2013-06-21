@@ -1,4 +1,9 @@
-source 'http://rubygems.org'
+source :rubygems
 gem 'sinatra'
 gem 'sass'
-gem 'newrelic_rpm'
+gem 'memcachier'
+gem 'dalli'
+
+group :production do
+  gem "unicorn"
+end

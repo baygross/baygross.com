@@ -1,13 +1,17 @@
 #shotgun ./app.rb -p 3000
 
 #dependencies
-require 'rubygems'
-require 'bundler/setup'
-require 'sinatra'
-require 'sass'
+require "rubygems"
+require "bundler"
+Bundler.require :default, (ENV["RACK_ENV"] || "development").to_sym
 
-configure :production do
-  require 'newrelic_rpm'
+# initialize cache
+if ENV["RACK_ENV"] == 'production'
+  CACHE = Dalli::Client.new
+else
+  #/usr/bin/memcached -p 11211
+  options = { :namespace => "baygross.com", :compress => true }
+  CACHE = Dalli::Client.new('localhost:11211', options)
 end
 
 #include routes

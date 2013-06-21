@@ -1,11 +1,14 @@
 <div id='reading' class='panel'>
   <% 
-    require 'open-uri'
-    require 'net/http'
-    require 'json'
-    base = 'http://pocketapi.herokuapp.com/retrieve'
-    resp = Net::HTTP.get( URI(base) )
-    @articles = JSON.parse( resp )
+    if !(@articles = CACHE.get('reading-list'))
+      require 'open-uri'
+      require 'net/http'
+      require 'json'
+      base = 'http://pocketapi.herokuapp.com/retrieve'
+      resp = Net::HTTP.get( URI(base) )
+      @articles = JSON.parse( resp )
+      CACHE.set('reading-list', @articles, (60*60*12), {})
+    end 
   %>
   <% @articles.each do |a| %>
   
@@ -13,7 +16,7 @@
       <div class='leftblock'>
         <a class='title' href='<%= a['url']%>'><%= a['title'] %></a>
         <div class='author'><%= a['author'] %></div>
-        <div class='date'><%= a['date'] %></div>
+        <div class='date'><%= a['ts'] %></div>
         <div class='summary'>
           <%= a['summary'] %>
         </div>
