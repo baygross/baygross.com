@@ -10,9 +10,12 @@
       CACHE.set('reading-list', @articles, (60*60*12), {})
     end 
   %>
-  <% @articles.each do |a| %>
   
-    <div class='article'>
+  
+  <% @articles.each_with_index do |a, idx| %>
+    <% c = idx > 13 ? 'hidden' : '' %>
+    
+    <div class='article <%= c %>'>
       <div class='leftblock'>
         <a class='title' href='<%= a['url']%>'><%= a['title'] %></a>
         <div class='author'><%= a['author'] %></div>
@@ -25,7 +28,14 @@
       <img class='photo' src='<%= a['img'] %>' />
       <div class='clearfix'></div>
     </div>
-    
   <% end %>
-
+  
+  <div id='reveal'>Show more</div>
+  
+  <script type='text/javascript'>
+  $('#reveal').on('click', function(){
+    $('.article.hidden').removeClass('hidden');
+    $(this).hide();
+  });
+  </script>
 </div>

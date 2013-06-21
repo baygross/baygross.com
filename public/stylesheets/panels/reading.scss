@@ -5,6 +5,9 @@
     margin-top:6px;
     border-top:1px dotted #ccc;
     padding-top:8px;
+    &.hidden{
+      display:none;
+    }
     &:first-child{
       border-top:none;
       margin-top:18px;
@@ -63,5 +66,18 @@
       };
     }
     
+  }
+  #reveal{
+    width:400px;
+    margin:80px 60px;
+    padding:6px;
+    text-align:center;
+    background-color:$green;
+    color:white;
+    &:hover{
+      cursor:pointer;
+      text-decoration:underline;
+      border-bottom:1px solid #999;
+    };
   }
 }
