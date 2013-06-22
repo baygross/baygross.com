@@ -1,3 +1,50 @@
 #blog{
   
+  
+  .post{
+    width: 740px;
+    margin-top:6px;
+    border-top:1px dotted #ccc;
+    padding-top:8px;
+    &:first-child{
+      border-top:none;
+      margin-top:18px;
+    };
+    .excerpt{
+      font-size:14px;
+    }
+    .title{
+      font-size:16px;
+      font-weight:bold;
+      text-decoration:none;
+      color:#333;
+      padding-bottom:1px;
+      display:inline-block;
+      &:hover{
+        padding-bottom:0px;
+        color:$darker-blue;
+        border-bottom:1px dotted $darker-blue;
+      };
+    }
+    .date{
+      font-size:12px;
+      color:#888;
+      padding-bottom:3px;
+    }
+    
+    .readmore{
+      font-size: 11px;
+      font-style: italic;
+      color: #888;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+      &:hover{
+        color:$blue;
+        text-decoration:underline;
+      };
+    }
+    
+  }
+  
 }

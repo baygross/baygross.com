@@ -1,4 +1,28 @@
 <div id='blog' class='panel'>
-  <p style='padding-left:200px; padding-top: 200px; font-size:10px'>[soon]</p>
+  <% 
+    require 'CGI'
+    #CACHE.flush_all()
+    if !(@posts = CACHE.get('blog-posts'))
+      require 'open-uri'
+      require 'net/http'
+      require 'json'
+      base = 'http://blog.baygross.com/feed.json'
+      resp = Net::HTTP.get( URI(base) )
+      @posts = JSON.parse( resp )
+      CACHE.set('blog-posts', @posts, (60*30), {})
+    end 
+  %>
+  
+  <% @posts.each do |a| %>
+    
+    <div class='post'>
+      <a class='title' href='<%= a['url']%>'><%= a['title'] %></a>
+      <div class='date'><%= a['date'] %></div>
+      <div class='excerpt'>
+        <%= CGI.unescapeHTML(a['excerpt'].to_s) %>
+      </div>
+      <a class='readmore' href='<%= a['url']%>'</a>Read more...</a>
+    </div>
+  <% end %>
   
 </div>
