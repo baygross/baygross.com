@@ -47,7 +47,11 @@ function handleWindowResize(){
 
   // always dynamically resize right frame unless we're mobile
   if ( !$('body').hasClass('mobile') ){
-    $('#maincol').css('width', $('body').width() - $('#leftcol').width() );
+    var new_width = $('body').width();
+    new_width -= $('#leftcol').width();
+    new_width -= $('#maincol').outerWidth();
+    new_width += $('#maincol').width();
+    $('#maincol').css('width',  new_width);
     var h = 210 + $('#leftcol .info:visible').height();
     $('#leftcol').css('minHeight', h+'px');
   }
@@ -55,14 +59,17 @@ function handleWindowResize(){
   // switch into mobile
   if ( $(window).width() < 750 && !$('body').hasClass('mobile') ){
     $('body').addClass('mobile');
-    $('#maincol').css('width', '100%');
     $('#leftcol').css('minHeight', '130px');
+    // would have a been a good time for border-box, mah right?
+    $('#maincol').css('width',  'auto');
   }
   
   // switch out of mobile
   if ( $(window).width() >= 750 && $('body').hasClass('mobile') ){
     $('body').removeClass('mobile');
   }
+  
+  
 }
 
 

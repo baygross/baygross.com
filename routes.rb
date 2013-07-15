@@ -19,8 +19,8 @@ get route_rgx do
 end
 
 #project page redirects
-projects = %w[ amicus essaytyper hardlyworkin travelogue hackyale whatsherface-book chomalab 
-              chickentenders subletmeyale ]
+projects = %w[ prism amicus essaytyper hardlyworkin travelogue hackyale whatsherface-book 
+              turntaylor chomalab chickentenders subletmeyale ]
 route_rgx = %r{^/(#{projects.join '|'})$}i # case-insensitive
 get route_rgx do
   redirect '/projects/#' + params[:captures].first.downcase

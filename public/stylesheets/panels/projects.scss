@@ -15,7 +15,7 @@ $padding: 16px;
     margin-top:$padding;
     border-top:1px solid #000;
     padding-top:$padding;
-    max-width:820px;
+    max-width:794px;
     &:first-child{
       border-top:none;
     };
@@ -51,26 +51,22 @@ $padding: 16px;
     }
   }
   .rightblock{
-    width:300px;
+    margin-left:6px;
+    width:308px;
     float:left;
     img{
       float:right;
       width:144px;
       height:100px;
       padding:2px;
-      margin:2px;
+      margin:2px 0px 4px 2px;
       border:1px solid #ccc;
     }
     .facebook{
       float:right;
       width: 100px;
       margin-top: 26px;
+      overflow: hidden;
     }
-  }
-}
-
-.info.projects{
-  p{
-    font-size:16px;
   }
 }
