@@ -6,9 +6,11 @@
   function resizeStream(){
     var h = $('#tweeting iframe').contents().find(".h-feed").height() + 60;
     $('#tweeting iframe').height(h+'px');
-    $('#tweeting iframe').contents().find(".stream").height(h);
+    $('#tweeting iframe').contents().find(".stream").height(h).css('overflow-y', 'hidden');
+    
   }
   
+  // so janky
   $(document).ready(function(){ setInterval(resizeStream, 100); });
   
   </script>
