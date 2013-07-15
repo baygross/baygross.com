@@ -12,6 +12,21 @@
     };
     .excerpt{
       font-size:14px;
+      p{
+        margin: 1em 0;
+      }
+      a{
+      	color: #0060b7;
+      	text-decoration: none;
+        @include transition(color .1s);
+    
+        &:hover{
+      	color: #003362;
+        }
+      }
+      b, em, strong{
+        font-weight:normal;
+      }
     }
     .title{
       font-size:16px;
