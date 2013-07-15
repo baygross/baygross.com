@@ -1,6 +1,6 @@
 <div id='blog' class='panel'>
   <% 
-    require 'CGI'
+    require 'cgi'
     #CACHE.flush_all()
     if !(@posts = CACHE.get('blog-posts'))
       require 'open-uri'
