@@ -4,11 +4,11 @@ get '/' do
 end
 
 # flush blog and pocket
-get '/flushcache'
+get '/flushcache' do
   #CACHE.flush_all()
   CACHE.delete('blog-posts')
   #CACHE.delete('reading-list')
-  redirect_to '/'
+  redirect '/'
 end
 
 # panel pages
