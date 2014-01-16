@@ -3,6 +3,12 @@ get '/' do
   erb :'panels/about'
 end
 
+# flush blog and pocket
+get '/flushcache'
+  CACHE.flush_all()
+  redirect_to '/'
+end
+
 # panel pages
 pages = %w[about projects blog tweeting reading]
 
@@ -19,7 +25,7 @@ get route_rgx do
 end
 
 #project page redirects
-projects = %w[ prism amicus essaytyper hardlyworkin travelogue hackyale whatsherface-book 
+projects = %w[ prism amicus essaytyper hardlyworkin travelogue hackyale whatsherface-book
               turntaylor chomalab chickentenders subletmeyale ]
 route_rgx = %r{^/(#{projects.join '|'})$}i # case-insensitive
 get route_rgx do

@@ -1,7 +1,6 @@
 <div id='blog' class='panel'>
-  <% 
+  <%
     require 'cgi'
-    #CACHE.flush_all()
     if !(@posts = CACHE.get('blog-posts'))
       require 'open-uri'
       require 'net/http'
@@ -11,11 +10,11 @@
       resp = Net::HTTP.get( URI(base) )
       @posts = JSON.parse( resp )
       CACHE.set('blog-posts', @posts, (60*10), {})
-    end 
+    end
   %>
-  
+
   <% @posts.each do |a| %>
-    
+
     <div class='post'>
       <a class='title' href='<%= a['url']%>'><%= a['title'] %></a>
       <div class='date'><%= a['date'] %></div>
@@ -25,5 +24,5 @@
       <a class='readmore' href='<%= a['url']%>'</a>Read more...</a>
     </div>
   <% end %>
-  
+
 </div>
