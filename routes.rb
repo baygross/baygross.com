@@ -5,7 +5,9 @@ end
 
 # flush blog and pocket
 get '/flushcache'
-  CACHE.flush_all()
+  #CACHE.flush_all()
+  CACHE.delete('blog-posts')
+  #CACHE.delete('reading-list')
   redirect_to '/'
 end
 
