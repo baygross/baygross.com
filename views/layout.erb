@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="no-js" lang="en">
 <head>
+  <!--
+   Welcome, source-code viewer! Kicking the tires, checking under the hood? Creepin' on my medicine cabinet? Well then.
+   This site was built back in 2013 is updated sporadically I guess.
+
+   Sinatra backend, custom layout.  The blog and Pocket feeds are actually running
+   on seperate heroku instances and serving up their content via basic api endpoints over Rack.
+   Unnecessary? Oh, definitely. Unstable? Clearly.
+  -->
+
   <title>Bay Gross</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="keywords" content="Bay Gross, Yale University, Medford, Oregon, New Haven, Davenport College, Saint Mary's School, SMHS, FOOT, HackYale, EssayTyper, HardlyWork.in, Travelogue, Google, NYC, APM, startups, amicus, co-founder" />
+  <meta name="keywords" content="Bay Gross, Yale University, Medford, Oregon, New Haven, Davenport, Saint Mary's School, SMHS, FOOT, HackYale, EssayTyper, HardlyWork.in, Travelogue, PrismViz, Google, NYC, APM, startups, amicus," />
   <meta name="author" content="Bay Gross" />
-  <meta name="copyright" content="Copyright (C) 2013 Bay Gross" />
+  <meta name="copyright" content="Copyright (C) 2014 Bay Gross" />
   <meta property="description" content="Bay Gross is an Associate Product Manager at Google, NYC. He is originally from Medford Oregon.">
   <meta name="google-site-verification" content="cdI7l-x4IInnQsXZYBIj-o7xpCb4bu1e_9aYwnmxsHw" />
   <meta property="og:title" content="Bay Gross">
@@ -17,48 +26,48 @@
   <meta property="og:url" content="http://www.baygross.com">
   <meta property="og:description" content="Bay Gross is an Associate Product Manager at Google, NYC. He is originally from Medford Oregon.">
   <meta property="fb:admins" content="1343225522">
-  
+
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
   <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script type="text/javascript" src="/javascripts/main.js"></script>
-  <link rel="shortcut icon" href="/favicon.png">   
+  <link rel="shortcut icon" href="/favicon.png">
   <link rel="stylesheet" href="/stylesheets/main.css">
-  
+
 </head>
 <body>
 
   <!-- left column -->
   <aside id="leftcol">
     <img id="atom" src="/images/atom.png">
-		
-    <div class="about info">  
+
+    <div class="about info">
       <h3>Bay Gross</h3>
       <p>
-        Google · NYC · Yale 
+        Google · NYC · Yale
       </p>
       <p>
-       Builds things on the internet!
+       Building things on the internet!
       </p>
     </div>
-    
-    <div class="projects info">  
+
+    <div class="projects info">
       <h3>Work</h3>
       <p>
-        Some collected projects &amp; hacks. 
+        Some collected projects &amp; hacks.
       </p>
       <p>Together, they've seen coverage in
         <a href="http://www.forbes.com/sites/kashmirhill/2011/12/15/as-facebook-timeline-rolls-out-find-out-how-well-you-know-your-friends/">Forbes</a>,
-        <a href="http://mashable.com/2011/07/03/hardlyworkin-excel-facebook/">Mashable</a>, 
+        <a href="http://mashable.com/2011/07/03/hardlyworkin-excel-facebook/">Mashable</a>,
         <a href="http://techcrunch.com/2012/03/22/amicus-seed-funding/">TechCrunch</a>, <br>
         <a href="http://abcnews.go.com/GMA/video/disguise-facebook-excel-spreadsheet-pop-news-heat-index-14331453">Good Morning America</a>,
-        <a href="http://www.theatlantic.com/technology/archive/2011/06/hardlyworkin-turns-your-facebook-news-feed-into-a-spreadsheet/241044/">theAtlantic</a>, 
+        <a href="http://www.theatlantic.com/technology/archive/2011/06/hardlyworkin-turns-your-facebook-news-feed-into-a-spreadsheet/241044/">theAtlantic</a>,
         <a href="http://techland.time.com/2011/07/05/how-to-disguise-facebook-as-a-common-spreadsheet/">TIME</a>,
         and <a href="http://www.corriere.it/scienze_e_tecnologie/11_luglio_05/facebook-nascosto-lavoro_edee4a6a-a6f9-11e0-bbaa-d83a3b6f7958.shtml">more</a> .
       </p>
     </div>
-    
-    <div class="blog info">  
+
+    <div class="blog info">
       <h3>Blog</h3>
       <!--p>
         I post occasionally about current projects in tech and data.
@@ -67,18 +76,18 @@
         <a style='float:right; font-size:80%' href='http://blog.baygross.com'>All posts</a>
       </p -->
       <p style='font-size:14px'>
-        <b>n.</b><br> 
-        Short for <i>weblog</i>. <br><br> 
-        A meandering, blatantly uninteresting online diary that 
-        gives the author the illusion that people are interested 
-        in their life. Consists of such 
+        <b>n.</b><br>
+        Short for <i>weblog</i>. <br><br>
+        A meandering, blatantly uninteresting online diary that
+        gives the author the illusion that people are interested
+        in their life. Consists of such
         riveting entries as "homework sucks" and "I slept until noon today." <br>
         <a style="float:right; margin-top:-2px" href="http://www.urbandictionary.com/define.php?term=blog">-UrbanDictionary</a>
       </p>
 
     </div>
-    
-    <div class="tweeting info">  
+
+    <div class="tweeting info">
       <h3>@baygross</h3>
       <p>
         Tweets and hashtags.
@@ -87,13 +96,13 @@
         ☞&nbsp;<a href="https://twitter.com/intent/user?screen_name=baygross">Follow me</a>
       </p>
     </div>
-    
-    <div class="reading info">  
+
+    <div class="reading info">
       <h3>Reading</h3>
       <p>
-        This is a sort of hacked-together API feed of my 
+        This is a sort of hacked-together API feed of my
         <a href='http://www.getpocket.com'>Pocket</a> history.
-        I think social news sharing is an interesting trend, and so 
+        I think social news sharing is an interesting trend, and so
         I'm going to try exposing my raw listings for a while.  Will have to remember not
         to save anything embarassing.
       </p>
@@ -101,15 +110,15 @@
         More about how and why <a href='http://blog.baygross.com/2013/07/05/new-blog-and-site.html'>here</a>.
       </p>
     </div>
-    
+
     <div class='clearfix'></div>
-	
+
   </aside>
-	
-  
+
+
   <!-- Main panel column -->
   <section id="maincol">
-	
+
     <nav class="top-nav">
       <span id='lnk_about' alt="about" class="nav" title="About">About</span>
       <span id='lnk_projects' alt="projects" class="nav" title="Projects">Projects</span>
@@ -117,13 +126,13 @@
       <span id='lnk_tweeting' alt="tweeting" class="nav" title="What I&#39;m tweeting">Tweeting</span>
       <span id='lnk_reading' alt="reading" class="nav" title="What I&#39;m reading">Reading</span>
     </nav>
-		
+
     <!-- panels insert here -->
     <div id='panel-wrapper'>
       <%= erb ("/panels/loading").to_sym %>
       <%= yield %>
     </div>
-      
+
   </section>
 
   <!-- google analytics -->

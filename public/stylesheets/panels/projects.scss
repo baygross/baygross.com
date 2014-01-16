@@ -1,7 +1,7 @@
 $padding: 16px;
 
 #projects{
-  
+
   a{
     color:$darker-blue;
     text-decoration:none;
@@ -10,7 +10,7 @@ $padding: 16px;
       text-decoration:underline;
     };
   }
-  
+
   .project{
     margin-top:$padding;
     border-top:1px solid #000;
@@ -20,7 +20,7 @@ $padding: 16px;
       border-top:none;
     };
   }
-  
+
   .topblock{
     padding-bottom:$padding;
     border-bottom:1px solid #aaa;
@@ -29,17 +29,20 @@ $padding: 16px;
       float:left;
       font-size:17px;
     }
+    span.date{
+      float:right;
+      font-size:13px;
+    }
     a{
       float:right;
       color:$darker-blue;
       font-size:13px;
       text-decoration:none;
-      padding-top:3px;
       padding-right:10px;
       padding-left:30px;
     }
   }
-  
+
   .leftblock{
     max-width:480px;
     float:left;
