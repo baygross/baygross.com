@@ -1,7 +1,8 @@
 <div id='projects' class='panel'>
 
-  <% %w[ prism turntaylor essaytyper amicus hackyale hardlyworkin travelogue
-         chickentenders whatsherface-book subletmeyale chomalab ].each do |proj| %>
+  <% %w[ prism essaytyper amicus hackyale hardlyworkin turntaylor
+         whatsherface-book browserdating photobama travelogue chickentenders
+         subletmeyale chomalab ].each do |proj| %>
     <%= erb ('projects/'+proj).to_sym %>
   <% end %>
 

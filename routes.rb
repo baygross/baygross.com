@@ -27,7 +27,7 @@ get route_rgx do
 end
 
 #project page redirects
-projects = %w[ prism amicus essaytyper hardlyworkin travelogue hackyale whatsherface-book
+projects = %w[ prism amicus essaytyper hardlyworkin browserdating photobama travelogue hackyale whatsherface-book
               turntaylor chomalab chickentenders subletmeyale ]
 route_rgx = %r{^/(#{projects.join '|'})$}i # case-insensitive
 get route_rgx do
