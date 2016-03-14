@@ -1,28 +1,105 @@
-<div id='blog' class='panel'>
-  <%
-    require 'cgi'
-    if !(@posts = CACHE.get('blog-posts'))
-      require 'open-uri'
-      require 'net/http'
-      require 'json'
-      #base = "http://localhost:4000/feed.json"
-      base = 'http://blog.baygross.com/feed.json'
-      resp = Net::HTTP.get( URI(base) )
-      @posts = JSON.parse( resp )
-      CACHE.set('blog-posts', @posts, (60*10), {})
-    end
-  %>
+<div id="blog" class="panel" style="display: block;">
 
-  <% @posts.each do |a| %>
 
-    <div class='post'>
-      <a class='title' href='<%= a['url']%>'><%= a['title'] %></a>
-      <div class='date'><%= a['date'] %></div>
-      <div class='excerpt'>
-        <%= CGI::unescape(a['excerpt'].to_s) %>
-      </div>
-      <a class='readmore' href='<%= a['url']%>'</a>Read more...</a>
+
+
+    <div class="post">
+      <a class="title" href="http://blog.baygross.com/2014/01/15/twitter-bot-fun.html">Fun with Twitter Bots</a>
+      <div class="date">15 January 2014</div>
+      <div class="excerpt">
+        <p>
+I've been reading a lot about twitter bots lately.
+Not quite sure what I want to do here yet, but something along the lines of social networks + identity,
+or at the very least some sort of automated vanity account.
+</p>
+<p>
+My Favorites:
+</p><ul>
+  <li data-dynamite-selected="true">
+    <a href="http://twitter.com/THEUNIVERSE">@THEUNIVERSE</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/YesYoureRacist">@YesYoureRacist</a>
+  </li>
+  <li>
+    <a href="http://twitter.com/EnjoyTheFilm">@EnjoyTheFilm</a>  &lt;-- incredible
+  </li>
+  <li>
+    <a href="https://twitter.com/pentametron">@pentametron</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/KingLeonidaz_">@KingLeonidaz_</a>
+  </li>
+</ul>
+<br>
+And related reading:
+<ul>
+  <li>
+    <a href="http://www.newyorker.com/online/blogs/elements/2013/11/the-rise-of-twitter-bots.html?currentPage=all">
+      NewYorker</a> - The Rise of Twitter Bots
+  </li>
+  <li>
+    <a href="http://www.wired.com/wiredenterprise/2012/11/twitterbots/">
+      Wired</a> - Twitter Bots Fight it Out
+  </li>
+
+
+      </ul></div>
+      <a class="readmore" href="http://blog.baygross.com/2014/01/15/twitter-bot-fun.html" <="" a="">Read more...</a>
     </div>
-  <% end %>
+
+
+    <div class="post">
+      <a class="title" href="http://blog.baygross.com/2013/10/20/The-Importance-of-SEO.html">The Importance of SEO</a>
+      <div class="date">20 October 2013</div>
+      <div class="excerpt">
+        <p>
+Got this doozy of a Google Alert the other day. The brand is strong, boys.
+</p>
+<img src="http://blog.baygross.com/assets/google-alert.png" style="width:500px;border:1px solid #eee; padding:4px">
+
+
+      </div>
+      <a class="readmore" href="http://blog.baygross.com/2013/10/20/The-Importance-of-SEO.html" <="" a="">Read more...</a>
+    </div>
+
+
+    <div class="post">
+      <a class="title" href="http://blog.baygross.com/2013/07/15/some-great-products.html">Some great products</a>
+      <div class="date">15 July 2013</div>
+      <div class="excerpt">
+        <p>Some great products I’ve really been enjoying this summer: <em>Pocket</em>, <em>Newsle</em>, <em>Moves</em>…</p>
+      </div>
+      <a class="readmore" href="http://blog.baygross.com/2013/07/15/some-great-products.html" <="" a="">Read more...</a>
+    </div>
+
+
+    <div class="post">
+      <a class="title" href="http://blog.baygross.com/2013/07/08/turntaylor.fm.html">TurnTaylor.fm</a>
+      <div class="date">08 July 2013</div>
+      <div class="excerpt">
+        <p>
+We're proud to announce the latest in online social music listening: <a href="http://turntaylor.fm">TurnTaylor.fm</a>.
+</p>
+<p>
+Similar to internet-rival TurnTable.fm in many ways, but optimized for <b>#taylortuesdays</b>.
+</p>
+<img src="http://baygross.com/images/work/turntaylor_1.png" style="width:500px">
+
+
+      </div>
+      <a class="readmore" href="http://blog.baygross.com/2013/07/08/turntaylor.fm.html" <="" a="">Read more...</a>
+    </div>
+
+
+    <div class="post">
+      <a class="title" href="http://blog.baygross.com/2013/07/05/pocket-api.html">Pocket API</a>
+      <div class="date">05 July 2013</div>
+      <div class="excerpt">
+        <p>Lately I’ve been getting excited about trends in personal data collection and data privacy. Naveen Selvadurai recently made <a href="http://x.naveen.com/post/51808692792/a-personal-api"> headlines</a> for exposing his collect personal data on diet, location, and sleep patterns as a public API. This is the sort of thing that’d be great to mashup with <a href="http://d3js.org/">D3</a>. But there is still lots of low-hanging fruit when it comes to personal data collection and exposure, and three areas that I’m looking at currently are <strong><em>texting</em></strong>, <strong><em>location tracking</em></strong>, and <strong><em>news consumption</em></strong>.</p>
+      </div>
+      <a class="readmore" href="http://blog.baygross.com/2013/07/05/pocket-api.html" <="" a="">Read more...</a>
+    </div>
+
 
 </div>
