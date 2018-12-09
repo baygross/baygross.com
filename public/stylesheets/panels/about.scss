@@ -1,16 +1,39 @@
 #about{
 
+  max-width: 720px;
+  line-height: 1.25em;
+
+//  li:first-of-type p:first-of-type {
+//    font-weight: 400;
+//  }
   ul{
-  	margin-top: 50px;	
+  	margin-top: 40px;	
   	padding-left: 0px;
   	list-style-type: none;
   }
 
   li{
-    	margin-top: 10px;
+    	margin-bottom: 12px;
       padding-left:105px;
+      &.first{
+        margin-bottom: 25px;
+        background-color: rgba(250,190,20,0.25);
+        margin-left: -100px;
+        margin-right: -150px;
+        padding-left: 200px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        padding-right: 150px;
+        p{
+          margin-top:9px;
+
+        }
+      }
       &.bigspacer{
         margin-top: 50px;
+      }
+      p{
+        margin-top:6px;
       }
   }
 

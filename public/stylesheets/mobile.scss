@@ -8,7 +8,6 @@
   aside{
     position:static;
   	width: 100%;
-  	background-color: $green;
   	border-bottom: 1px solid #AAA;
     border-right:none;
     
@@ -19,6 +18,10 @@
    .info{
     	position: static;
       float:left;
+
+      p{
+        padding-top:0px;
+      }
     }
   }
 

@@ -32,7 +32,7 @@ aside{
 	top: 0;
 	left: 0;
 	width: 240px;
-	background-color: $green;
+	background-color: #313638; 
 	border-right: 1px solid #AAA;
   
   img#atom{
@@ -83,13 +83,13 @@ aside{
     h3{
       	padding: 0px 30px;
       	font-size: 32px;
-      	font-weight: normal;
       	line-height: 1;
       	color: #fff;
       	margin-bottom: 12px;
       	text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-      	font-weight: 100;
+      	font-weight: 200;
       	letter-spacing: 1px;
+        //font-variant: small-caps;
     }
     p{
       font-size:16px;
@@ -117,7 +117,7 @@ section#maincol{
 	left: 240px;
   bottom:0;
   overflow:auto;
-	padding: 90px 60px 90px 100px;
+	padding: 70px 60px 90px 100px;
 	border-left: 1px solid #888;
 }
 
@@ -135,7 +135,7 @@ nav{
   	padding-bottom: 13px;
   	font-size: 12px;
   	text-transform: uppercase;
-  	color: #b3b3b1;
+  	color: #838381;
   	margin-right:8px;
     @include transition(color .1s);
     
@@ -144,7 +144,7 @@ nav{
     	color: #000;
     }
     &:hover{
-      color:#555;
+      color:#444;
       cursor:pointer;
     };
   }
