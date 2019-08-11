@@ -78,3 +78,4 @@ nohup.out
 
 # exuberant (!) ctags
 tags
+.DS_Store
