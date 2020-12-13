@@ -12,7 +12,7 @@ get '/flushcache' do
 end
 
 # panel pages
-pages = %w[about projects blog tweeting reading]
+pages = %w[about projects tweeting]
 
 # standard routes
 route_rgx = %r{^/(#{pages.join '|'})\/?$}i # case-insensitive

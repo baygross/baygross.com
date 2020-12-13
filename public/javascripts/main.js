@@ -1,4 +1,4 @@
-var myPages = ['about', 'projects', 'blog', 'tweeting', 'reading'];
+var myPages = ['about', 'projects', 'tweeting'];
 
 // initial hooks and main calls
 $(document).ready(function(){
