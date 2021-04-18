@@ -1,5 +1,6 @@
 
-/* I am not a front-end engineer, and design-wise, sometimes I wear white after Labor Day. */
+
+
 
 body {
   font-family: unset;
@@ -7,6 +8,7 @@ body {
   letter-spacing: unset;
   color: unset;
 }
+
 #home a{
   color:#3d59eb;
 }
@@ -34,6 +36,9 @@ li{
     margin-bottom:2rem;
 }
 
+hr {
+  display:none;
+}
 
 
 #projects a {
@@ -136,5 +141,31 @@ li{
   .halo:hover:after {
     background-color: cyan;
     transform-origin: bottom right;
+  }
+}
+
+
+/* Mobile resolution hack ----------- */
+@media only screen and (max-width: 500px) {
+  body{
+    font-size:calc(1em + 1vw); /* default is for mobile resolution*/
+    line-height:1.4;
+  }
+
+  .wrapper .container {
+    width: 90%;
+    padding-top:2em;
+    padding-bottom:1em;
+  }
+
+  .halo, .halo img {
+    width:68px;
+    height:68px;
+  }
+
+  hr {
+    display:block;
+    border:0px;
+    margin:0.5rem 0;
   }
 }
