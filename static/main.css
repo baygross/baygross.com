@@ -1,0 +1,140 @@
+
+/* I am not a front-end engineer, and design-wise, sometimes I wear white after Labor Day. */
+
+body {
+  font-family: unset;
+  font-weight: unset;
+  letter-spacing: unset;
+  color: unset;
+}
+#home a{
+  color:#3d59eb;
+}
+
+
+.wrapper .container {
+  width: 80%;
+  max-width: 50em;
+}
+
+.wrapper>.container {
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+}
+
+ul {
+  margin-left: 1.5em;
+  list-style: inherit;
+}
+
+ol, ul {
+  list-style: inherit;
+}
+li{
+    margin-bottom:2rem;
+}
+
+
+
+#projects a {
+  text-decoration: none; }
+  #projects a:hover {
+    color: #9ac851;
+    text-decoration: underline; }
+#projects .project {
+  margin-top: 16px;
+  border-top: 1px solid #9b4dca;
+  padding-top: 16px;
+  max-width: 794px; }
+#projects .topblock {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 16px; }
+  #projects .topblock h3 {
+    float: left;
+    font-size: 1.2em;
+    margin-bottom:0px; }
+  #projects .topblock span.date {
+    float: right;
+    font-size: 13px; }
+  #projects .topblock a {
+    float: right;
+    font-size: 13px;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 30px; }
+#projects .leftblock {
+  max-width: 480px;
+  float: left; }
+  #projects .leftblock p {
+    font-size: 14px;
+    margin-bottom: 1em; }
+#projects .rightblock {
+  margin-left: 6px;
+  width: 308px;
+  float: left; }
+  #projects .rightblock img {
+    float: right;
+    width: 144px;
+    height: 100px;
+    padding: 2px;
+    margin: 2px 0px 4px 2px;
+    border: 1px solid #ccc; }
+  #projects .rightblock .facebook {
+    float: right;
+    width: 100px;
+    margin-top: 26px;
+    overflow: hidden; }
+
+
+{
+
+}
+
+#home #gram img{
+  width:180px;
+}
+
+/* hat tip: https://bennettfeely.com/image-effects/#implementation */
+.halo {
+  /* background-image: "";  SET WITH Javascript */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display:inline-block;
+  width:180px;
+  height:180px;
+}
+
+@supports (mix-blend-mode: multiply) {
+
+  .halo:hover {
+    position: relative;
+    overflow: hidden;
+    background-color: magenta;
+    background-blend-mode: screen;
+  }
+
+  .halo:hover:before, .halo:hover:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    mix-blend-mode: multiply;
+    transform: scale(1.03);
+    background-blend-mode: screen;
+
+  }
+  .halo:hover:before {
+    background-color: yellow;
+    transform-origin: top left;
+  }
+  .halo:hover:after {
+    background-color: cyan;
+    transform-origin: bottom right;
+  }
+}

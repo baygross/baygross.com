@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<head>
+  <!--
+   Welcome, source-code viewer. Come for the peek behind the scenes, stay for the 2013 web standards. 
+   And look, I'll be honest up front, I'm using some inline styles. It's fine. 
+ -->
+
+ <title>Bay Gross</title>
+
+ <!-- CSS Reset -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+ <link rel="stylesheet" href="./static/main.css">
+
+ <!-- Fancy Box for Image Popups !-->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="./static/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+ <script type="text/javascript" src="./static/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="container" style="padding-bottom:0px;">
+      <a href="./index.html">&larr; home</a>
+      <h3 style="padding-top:1em">Projects Archive</h3>
+      <p>
+        This page is a dusty collection of fun side projects, mostly from university days.  Some of the more viral have seen coverage in
+        <a href="http://www.forbes.com/sites/kashmirhill/2011/12/15/as-facebook-timeline-rolls-out-find-out-how-well-you-know-your-friends/">Forbes</a>,
+        <a href="http://mashable.com/2011/07/03/hardlyworkin-excel-facebook/">Mashable</a>,
+        <a href="http://techland.time.com/2011/07/05/how-to-disguise-facebook-as-a-common-spreadsheet/">TIME</a>,
+        <a href="http://abcnews.go.com/GMA/video/disguise-facebook-excel-spreadsheet-pop-news-heat-index-14331453">Good Morning America</a>,
+        <a href="http://techcrunch.com/2012/03/22/amicus-seed-funding/">TechCrunch</a>,
+        <a href="http://www.buzzfeed.com/ariannarebolini/there-is-a-website-that-will-write-all-your-finals-essays#.qxxnxVREGZ">Buzzfeed</a>,
+        <a href="http://www.theatlantic.com/technology/archive/2011/06/hardlyworkin-turns-your-facebook-news-feed-into-a-spreadsheet/241044/">theAtlantic</a>,
+        <a href="http://www.economist.com/news/business/21567403-techniques-presidents-election-campaigns-have-spawned-one-lot-young-firms-obama?fsrc=scn/tw_ec/the_obama_start_ups">Economist</a>,
+        <a href="http://www.businessinsider.com/essay-typer-will-write-papers-for-you-2015-6">Business Insider</a>...
+        One's been published in <a href="https://www.psychologytoday.com/sites/default/files/Whatsherfacebook_0.pdf">Psychology Today</a>, and defended by <a href="https://www.eff.org/deeplinks/2015/07/eff-defends-whats-her-face-facebook">the EFF</a>.
+      </p>
+    </div>
+
+
+    <div id='projects' class='container' style="padding-top:10px">
+
+      <div id='generative' class='project'>
+        <div class='topblock clearfix'>
+          <h3>Generative Art & Image Analyses</h3>
+          <span class='date'>Winter 2018</span><br/>
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            A few weekends spent exploring browser-based canvas art, image convolutions, and remembering how to multiply matrices.
+          </p>
+          <p>tools: javascript, P5.js</p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_generative" href="./static/project-images/generative_1.png"><img src="./static/project-images/generative_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_generative" href="./static/project-images/generative_2.png"><img src="./static/project-images/generative_2_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_generative" href="./static/project-images/generative_3.png"><img src="./static/project-images/generative_3_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_generative" href="./static/project-images/generative_4.png"><img src="./static/project-images/generative_4_s.png" alt="" /></a>
+          
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='prism' class='project'>
+        <div class='topblock clearfix'>
+          <h3>PRISM: Your text message history, visualized.</h3>
+          <span class='date'>Spring 2013</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            PRISM grew out of a final college project, which aimed to implement and
+            expand on the "StackedGraph" algorithm described by Byron and Wattenberg
+            in their 2008 <a href='http://www.leebyron.com/else/streamgraph/download.php?file=stackedgraphs_byron_wattenberg.pdf'>publication</a> on the topic.
+          </p>
+          <p>
+            Now, PRISM is a stand-alone OSX app, available in the Apple App Store.  It creates
+            dynamic, customizable visualizations of your texting history based off of the
+            data in your iOS backups. Users can sort, color, blend, and mix their texting history
+            in a variety of ways to create aesthetically pleasing, and often surprising,
+            personalized infographics.
+          </p>
+          <p>
+            <strong>Update 2015: </strong>No longer in the app store; apple is not a fan of scraping itunes db backups :(
+          </p>
+          <p>
+          tools: MacRuby, Javascript</p>
+          <p class="links">
+          </p>
+
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_prism" href="./static/project-images/prism_2.png"><img src="./static/project-images/prism_2_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_prism" href="./static/project-images/prism_1.png"><img src="./static/project-images/prism_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_prism" href="./static/project-images/prism_3.png"><img src="./static/project-images/prism_3_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_prism" href="./static/project-images/prism_4.png"><img src="./static/project-images/prism_4_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='essaytyper' class='project'>
+        <div class='topblock clearfix'>
+          <h3>EssayTyper: It types your essays for you!</h3>
+          <span class='date'>Spring 2012</span><br/>
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            <a href="http://essaytyper.com">EssayTyper.com</a> uses a shadowy algorithm known as <i>Wikipedia</i>
+            to write any essay in the world for you, in mere seconds.
+          </p>
+          <p>
+            Just enter your topic of choice and start
+            slapping that keyboard -  EssayTyper will do the rest!
+          </p>
+          <p>
+            #1 on Reddit during launch, the site saw over 1 million
+            unique visitors in its first twenty-four hours. Still maintains 1M-2M visitors each month.
+          </p>
+          <p>tools: Sinatra, Javascript</p>
+
+          <p class="links">
+            <b>Press</b><br/>
+            <a href="http://thenextweb.com/shareables/2012/04/27/essaytyper-will-fool-everyone-into-thinking-that-you-type-like-a-boss/">theNextWeb</a>
+            <br /><a href="http://pandodaily.com/2012/04/30/bay-gross-and-his-magical-essaytyper-a-normative-critique/">PandoDaily</a>
+            <br /><a href="https://twitter.com/search?q=essaytyper.com&ampsrc=typd">Twitter</a>
+            <br /><a href="http://www.buzzfeed.com/ariannarebolini/there-is-a-website-that-will-write-all-your-finals-essays">Buzzfeed</a>
+            <br /><a href="http://www.businessinsider.com/essay-typer-will-write-papers-for-you-2015-6">Business Insider</a>
+          </p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_essay" href="./static/project-images/essaytyper_1.png"><img src="./static/project-images/essaytyper_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_essay" href="./static/project-images/essaytyper_2.png"><img src="./static/project-images/essaytyper_2_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='bitcoin' class='project'>
+        <div class='topblock clearfix'>
+          <h3>Bitcoin Remote Controller</h3>
+          <span class='date'>Fall 2017</span><br/>
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            In the summer/fall '17 bitcoin craze, we built a physical remote for real-time trading. 
+            Load up a dashboard of the latest spreads, and let 'er rip. 
+            Collaboration with <a href="http://twitter.com/matbalez">@matbalez</a> 
+          </p>
+          <p>tools: AWS Lambda, Amazon Dash buttons, Python, GDAX Api</p>
+          <p><a href="https://github.com/baygross/bitbutton">code</a></p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_bitcoin" href="./static/project-images/bitcoin_1.png"><img src="./static/project-images/bitcoin_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_bitcoin" href="./static/project-images/bitcoin_2.png"><img src="./static/project-images/bitcoin_2_s.png" alt="" /></a>
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='saybot' class='project'>
+        <div class='topblock clearfix'>
+          <h3>Slackbot w/ Airplay Speakers </h3>
+          <span class='date'>Fall 2017</span><br/>
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            A slackbot that can connect to your local Airplay/Airport LAN speakers and speak out your messages for you. 
+            Possibilities abound.
+          </p>
+          <p>tools: Ruby</p>
+          <a href="https://github.com/baygross/saybot">code</a>
+          </div>
+
+          <div class='rightblock'>
+            <a class="fancybox" rel="group_saybot" href="./static/project-images/saybot_1.png"><img src="./static/project-images/saybot_1.png" alt="" /></a>
+          </div>
+
+          <div class='clearfix'></div>
+        </div>
+
+        <div id='hackyale' class='project'>
+          <div class='topblock clearfix'>
+            <h3>HackYale: Student-driven lectures in web dev and entrepreneurship.</h3>
+            <span class='date'>2012-2013</span><br/>
+
+
+          </div>
+
+          <div class='leftblock'>
+            <p>
+              We launched <a href='http://hackyale.com'>HackYale</a> in the Fall of 2011, with a single student-run course covering web application development and front-end design. Inspired by Harvard's well-known and well-regarded CS50 lecture, HackYale was motivated by the lack of "startup-relavent" development training available to students through the Yale CS Department at the time.
+              That first semester we received 500 formal applications, over roughly 15% of the student body. 
+            </p>
+            <p>
+              The following semester we expanded our team and curriculum to include five weekly
+              courses covering front-end design, Rails, Node.JS, and iOS development -- with paid student lecturers.
+            </p>
+            <p>
+              HackYale helped formalize the need for a modern technology offering within the liberal arts curriculum at Yale.
+            </p>
+            <p>role: Co-founder.  Community, Lecturer, Curriculum.</p>
+            <p>collaboration with <a href="http://www.twitter.com/gaybrick">@gaybrick</a> and 
+             <a href="http://www.twitter.com/milesgrimshaw">@milesgrimshaw</a>
+           </p>
+           <p class="links">
+            <b>Press</b><br />
+            <a href="http://www.yaledailynews.com/news/2011/sep/29/lecture-series-trains-future-zuckerbergs/" target="_blank">Yale Daily News</a>
+            <br /><a href="http://yaleherald.com/topstory/codemakers-computer-science-at-yale-hacked/" target="_blank">Yale Herald</a>
+            <br /><a href="http://yaleherald.com/culture/hacking-yale-part-ii/" target="_blank">Yale Herald</a>
+            <br /><a href="http://www.yaledailynews.com/news/2012/jan/19/hackyale-to-expand/" target="_blank">Yale Daily News</a>
+          </p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_hackyale" href="./static/project-images/hackyale_1.png"><img src="./static/project-images/hackyale_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_hackyale" href="./static/project-images/hackyale_2.png"><img src="./static/project-images/hackyale_2_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_hackyale" href="./static/project-images/hackyale_3.png"><img src="./static/project-images/hackyale_3_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_hackyale" href="./static/project-images/hackyale_4.png"><img src="./static/project-images/hackyale_4_s.png" alt="" /></a>
+
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='whatsherface-book' class='project'>
+        <div class='topblock clearfix'>
+          <h3>WhatsHerFace-book: Do you know your friend graph?</h3>
+          <span class='date'>Winter 2011</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            After years of networking, the average college student knows fewer than 75% of their friends on Facebook. Individuals that have access to their photos, activities, location, and more.
+          </p>
+          <p>
+            WhatsHerFace-book.com was a browser-based game quiz where you were challenged to name
+            several of your Facebook friends in succession while racing the clock. We'd show you 4-5 photos of the individual, with their face highlighted... you just had to give us their name! (We built in phonetics and hamming buffer to make it reasonable.)
+          </p>
+          <p>
+            The game intended to help Facebook users reconsider their privacy exposure online.
+            After aggregating the results of ten thousand games from ~five thousand players,
+          we were left with some sobering statistics</a>.
+        </p>
+        <p>
+          <strong>Update 2015:</strong> FB tried to shut us down! Special <a href="https://www.eff.org/deeplinks/2015/07/eff-defends-whats-her-face-facebook">thanks to the EFF!</a>
+        </p>
+        <p>collaboration with <a href="http://charliecroom.com">@charliecroom</a> as part of <a href="http://www.yalelawtech.org/" target="_blank">Yale Law &amp; Tech</a>
+          <br/>and, we are <a href="https://www.psychologytoday.com/sites/default/files/Whatsherfacebook_0.pdf">published!</a></p>
+          <p>tools: Rails, jQuery, Facebook OpenGraph, AWS</p>
+
+          <p class="links">
+            <b>Press</b><br />
+            <a href="http://www.forbes.com/sites/kashmirhill/2011/12/15/as-facebook-timeline-rolls-out-find-out-how-well-you-know-your-friends/"target="_blank">Forbes</a>
+            <br /><a href="http://www.dailymail.co.uk/sciencetech/article-2074554/Facebook-timeline-feature-Mixed-reaction-latest-changes.html"target="_blank">DailyMail</a>
+            <br /><a href="http://www.allfacebook.com/that%E2%80%99s-a-facebook-photo-of-%E2%80%A6-what%E2%80%99sherface-2011-12"target="_blank">AllFaceBook</a>
+            <br /><a href="https://www.eff.org/deeplinks/2015/07/eff-defends-whats-her-face-facebook">EFF Defense</a>
+            <br /><a href="http://arstechnica.com/tech-policy/2015/07/facebooks-legal-team-goes-after-defunct-yale-class-project/">Ars Technica</a>
+
+          </p>
+
+
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_whatsher" href="./static/project-images/whatsherface_1.png"><img src="./static/project-images/whatsherface_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_whatsher" href="./static/project-images/whatsherface_2.png"><img src="./static/project-images/whatsherface_2_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_whatsher" href="./static/project-images/whatsherface_3.png"><img src="./static/project-images/whatsherface_3_s.png" alt="" /></a>
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='hardlyworkin' class='project'>
+        <div class='topblock clearfix'>
+          <h3>HardlyWork.in: Hides your Facebook feed in a spreadsheet!</h3>
+          <span class='date'>Summer 2011</span><br/>
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            HardlyWork.in pulled data from the Facebook Graph and Twitter API allowing you to
+            surreptitiously browse your feeds, view friends' profiles, and even preview photos and comments.
+            In it's first two weeks the site drew 1M unique visitors from over one hundred countries, and was featured on <b>GoodMorningAmerica</b>. 
+          </p>
+          <p>
+          HardlyWorkin went on to operate for years, pulling nearly 1M likes on Facebook and millions of visitors annually. My proudest victory was getting blacklisted by the IT team at Goldman Sachs :)
+          </p>
+          <p>
+            <b>Update 2015</b> Unfortunately, due to <a href="https://developers.facebook.com/docs/apps/changelog#v2_0_login">changes in the Facebook API</a> the site is a shadow of its former self, and cannot be rebuilt. 
+          </p>
+          <p>tools: Rails, Facebook OpenGraph, jQuery, AWS</p>
+          <p class="links">
+            <b>Press</b><br />
+            <a href="http://mashable.com/2011/07/03/hardlyworkin-excel-facebook/">Mashable</a>
+            <br /><a href="http://www.theatlantic.com/technology/archive/2011/06/hardlyworkin-turns-your-facebook-news-feed-into-a-spreadsheet/241044/">theAtlantic</a>
+            <br /><a href="http://techland.time.com/2011/07/05/how-to-disguise-facebook-as-a-common-spreadsheet/">TIME</a>
+            <br /><a href="http://www.hindustantimes.com/technology/Application-Reviews/How-to-Excel-at-work-using-Facebook/SP-Article1-717107.aspx">Hindustan</a>
+            <br /><a href="http://lifehacker.com/5817620/hardlyworkin-lets-you-goof-off-on-facebook-with-maximum-stealth/" target="_blank">LifeHacker</a>
+          </p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_hardly" href="./static/project-images/hardlyworkin_1.png"><img src="./static/project-images/hardlyworkin_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_hardly" href="./static/project-images/hardlyworkin_2.png"><img src="./static/project-images/hardlyworkin_2_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_hardly" href="./static/project-images/hardlyworkin_3.png"><img src="./static/project-images/hardlyworkin_3_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_hardly" href="./static/project-images/hardlyworkin_4.png"><img src="./static/project-images/hardlyworkin_4_s.png" alt="" /></a>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+
+
+      <div id='chickentenders' class='project'>
+        <div class='topblock clearfix'>
+          <h3>IsItChickenTendersDay.com?</h3>
+          <span class='date'>Fall 2011</span><br/>
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            After nearly missing Yale Dining's flagship entrée one afternoon in 2011, I vowed it would neigh happen again.
+          </p>
+          <p>
+            Now tender-fans across campus are never caught off-guard, and every
+            Chicken-Tenders-Thursday 700+ students (20% of student body) wake up to a text proclaiming the good news.
+          </p>
+          <p>tools: Twilio, Rails, Nokogiri</p>
+          <p class="links">
+            <b>Press</b><br/>
+            <a href="http://yaleherald.com/thebullblog/it-is-chicken-tenders-day-today/" target="_blank">Yale Herald</a><br />
+            <a href="http://yaledailynews.com/weekend/2012/03/06/stuff-yalies-like-5-chicken-tenders-day/" target="_blank">Yale Weekend</a>
+          </p>
+
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_tenders" href="./static/project-images/chickentenders_1.png"><img src="./static/project-images/chickentenders_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_tenders" href="./static/project-images/chickentenders_2.png"><img src="./static/project-images/chickentenders_2_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+
+      <div id='browserdating' class='project'>
+        <div class='topblock clearfix'>
+          <h3>Browser: The dating website exclusively for IE users.</h3>
+          <span class='date'>Winter 2014</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            Browser is a singles community exclusively for users of Internet Explorer.
+            Traditional values, and traditional markup standards.
+          </p>
+          <p>
+            No more unsolicited lightbox modals.
+            Just you, a few GIFS, and a fun-loving group of single luddites.
+          </p>
+
+          <p>
+            <strong>Update 2015</strong> Sadly, browserdating.com is now defunct. Long live tinder.
+          </p>
+
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_browserdating" href="./static/project-images/browserdating_1.png"><img src="./static/project-images/browserdating_1_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+
+      <div id='photobama' class='project'>
+        <div class='topblock clearfix'>
+          <h3>Photobama: The selfies app you deserve.</h3>
+          <span class='date'>Summer 2014</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            Photobama is the selfie app you've been waiting for.  Simply snap a
+            photo, and then drop Obama or your celebrity de jour into the background. Currently
+            only offered for iOS.
+          </p>
+
+          <p>
+            collaboration with <a href="http://www.twitter.com/milesgrimshaw">@milesgrimshaw</a>,
+            and <a href="http://www.twitter.com/tbfaux">@tbfaux</a>.
+          </p>
+
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_photobama" href="./static/project-images/photobama_2.png"><img src="./static/project-images/photobama_2_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_photobama" href="./static/project-images/photobama_1.png"><img src="./static/project-images/photobama_1_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='stats' class='project'>
+        <div class='topblock clearfix'>
+          <h3>Undergraduate Coursework in Statistics & Networks </h3>
+          <span class='date'>Spring 2013</span><br/>
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            Many interesting projects in Yale Stats 230 and Sociology 137 -- can recommend both courses fully.
+          </p>
+          <p>
+            - an analysis of AirBNB unit prices in Manhattan relative to distance from subway (TLDR: less impactful than you would think)
+          </p>
+          <p>
+            - an analysis of undergraduate social structures (proxied by living-group) relative to family income (proxied by Zillow assessed value of home property). (TLDR: more impactful than you would hope)
+          </p>
+          <p>tools: R, SQL, Ruby, Python, Pajek</p>
+          <p>collab with <a href="http://twitter.com/kevinakwok">@kevinakwok</a>
+          </p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_stats" href="./static/project-images/stats_1.png"><img src="./static/project-images/stats_1.png" alt="" /></a>
+          <a class="fancybox" rel="group_stats" href="./static/project-images/stats_2.png"><img src="./static/project-images/stats_2.png" alt="" /></a>
+          <a class="fancybox" rel="group_stats" href="./static/project-images/stats_3.png"><img src="./static/project-images/stats_3.png" alt="" /></a>
+          <a class="fancybox" rel="group_stats" href="./static/project-images/stats_4.png"><img src="./static/project-images/stats_4.png" alt="" /></a>
+          <a class="fancybox" rel="group_stats" href="./static/project-images/stats_5.png"><img src="./static/project-images/stats_5.png" alt="" /></a>
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='subletmeyale' class='project'>
+        <div class='topblock clearfix'>
+          <h3>SubletMeYale: Yale's best source for off campus housing.</h3>
+          <span class='date'>Spring 2011</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            One of my first projects and a finalist for Yale's first AppChallenge back in 2011.
+            SubletMeYale facilitated easy sublet sharing between students living
+            on and off of the main New Haven campus. (Launched long prior to AB&B, when only alt was craigslist).
+          </p>
+          <p>
+            Each summer the site hosts more than 500 apartments!
+          </p>
+          <p>
+            <strong>Update 2015:</strong> unfortunately Rails 2.3 security isn't what it used to be, and my first ever web app wasn't
+            exactly DRY or modular. Anticipating a healthcare.gov esque effort to repair, I think its time to retire the site.
+            SubletMeYale is dead -- long live AirBnB.
+          </p>
+
+          <p class="links">
+            <b>Press</b><br />
+            <a href="http://www.yaledailynews.com/news/2011/apr/01/yalie-creates-subletting-app/" target="_blank">Yale Daily News</a>
+            <br /><a href="http://www.yaledailynews.com/news/2011/apr/11/subletting-app-popular-grad-students/" target="_blank">Yale Daily News</a>
+          </p>
+
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_sublet" href="./static/project-images/subletme_1.png"><img src="./static/project-images/subletme_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_sublet" href="./static/project-images/subletme_2.png"><img src="./static/project-images/subletme_2_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='amicus' class='project'>
+        <div class='topblock clearfix'>
+          <h3>Amicus: Social fundraising for civic organizations</h3>
+          <span class='date'>Summer 2011</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            Amicus was a VC-backed startup based out of New York City that leveraged social connections (FB graph, etc) to help non-profits expand and engage with their constituency.
+          </p>
+          <p>
+            I helped build the v1 product and raise seed funding, working across the stack as part of a two man development team.
+            Departed team fully in early 2012.
+          </p>
+          <p>role: member of founding team: development, design, product.<br/>
+          tools: Rails, SQL, jQuery, AWS, Twilio, FB Graph</p>
+          <p class="links">
+            <b>Press</b><br/>
+            <a href='http://www.theatlantic.com/politics/archive/2012/11/my-best-friend-is-gay-where-social-networks-meets-same-sex-marriage/265793/' target="_blank">theAtlantic</a>
+            <br /><a href='http://techcrunch.com/2012/11/13/amicus/' target='_blank'>TechCrunch</a>
+            <br /><a href="http://techcrunch.com/2012/03/22/amicus-seed-funding/" target="_blank">TechCrunch</a>
+            <br /><a href="http://thenextweb.com/shareables/2011/12/01/work-at-this-company-and-youll-get-a-cow-a-fixie-and-an-unlimited-supply-of-your-favorite-beer/" target="_blank">theNextWeb</a>
+            <br /><a href='http://www.economist.com/news/business/21567403-techniques-presidents-election-campaigns-have-spawned-one-lot-young-firms-obama?fsrc=scn/tw_ec/the_obama_start_ups' target='_blank'>Economist</a>
+          </p>
+
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_amicus" href="./static/project-images/amicus_1.png"><img src="./static/project-images/amicus_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_amicus" href="./static/project-images/amicus_2.png"><img src="./static/project-images/amicus_2_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_amicus" href="./static/project-images/amicus_3.png"><img src="./static/project-images/amicus_3_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_amicus" href="./static/project-images/amicus_4.png"><img src="./static/project-images/amicus_4_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='turntaylor' class='project'>
+        <div class='topblock clearfix'>
+          <h3>TurnTaylor.fm: Listen to Taylor together.</h3>
+          <span class='date'>Summer 2013</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            TurnTaylor.fm is the future of
+            online social music listening. Similar to internet-rival
+            TurnTable.fm,
+            but optimized for #taylortuesdays.
+          </p>
+          <p>
+            <strong>Update 2015:</strong> We had a good run, but .fm domain names are like $100/yr, and so I think this site is going to come down now. Thanks <a href="https://en.wikipedia.org/wiki/.fm">Micronesia</a>.
+          </p>
+
+          <p>role: Co-founder, CEO, Swiftie</p>
+          <p>tools: Ruby, Sinatra, and a cavalier disregard of copyright law</p>
+          <p class="links">
+          </p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_taylor" href="./static/project-images/turntaylor_1.png"><img src="./static/project-images/turntaylor_1_s.png" alt="" /></a>
+
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+      <div id='chomalab' class='project'>
+        <div class='topblock clearfix'>
+          <h3>ChomaLab: Video analysis for tadpole cardiac systems.</h3>
+          <span class='date'>Spring 2011</span><br/>
+
+
+        </div>
+
+        <div class='leftblock'>
+          <p>
+            I spent a few months in the Spring of 2011 working with the research lab of Dr. Michael Choma at Yale Medical School.
+            Our project entailed taking high-definition color photography of beating tadpole hearts, and then analyzing the
+            video to extract heart boundaries and estimate the volume change over time.
+          </p>
+          <p>role: visual data analysis</p>
+          <p>tools: Matlab</p>
+        </div>
+
+        <div class='rightblock'>
+          <a class="fancybox" rel="group_choma" href="./static/project-images/choma_1.png"><img src="./static/project-images/choma_1_s.png" alt="" /></a>
+          <a class="fancybox" rel="group_choma" href="./static/project-images/choma_2.png"><img src="./static/project-images/choma_2_s.png" alt="" /></a>
+        </div>
+
+        <div class='clearfix'></div>
+      </div>
+
+
+      <script type='text/javascript'>
+        $(document).ready(function() {
+          $(".fancybox").fancybox();
+        });
+
+        /* google analytics */
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-22412422-1']);
+          _gaq.push(['_setDomainName', '.baygross.com']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+      </script>
+    </div> <!-- container -->
+  </div> <!-- wrapper --> 
+</body>
