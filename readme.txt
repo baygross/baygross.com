@@ -1,3 +1,11 @@
+
+
+# 12.12.20 Update
+Taking static snapshot of the site and hosting as flat html, as heroku cedar stack no longer supported and these sinatra gems are way out of date
+
+----
+
+
 [ Personal Website + Portfolio]
 
 #using
