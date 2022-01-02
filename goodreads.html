@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+  <!--
+   Welcome, source-code viewer. Come for the peek behind the scenes, stay for the 2013 web standards. 
+   And look, I'll be honest up front, I'm using some inline styles. It's fine. 
+ -->
+
+ <title>Bay Gross</title>
+
+ <!-- CSS Reset -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+ <link rel="stylesheet" href="./static/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+ <!-- Fancy Box for Image Popups !-->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="./static/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+ <script type="text/javascript" src="./static/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container" style="padding-bottom:0px;">
+      <a href="./index.html">&larr; home</a>
+      <h3 style="padding-top:1em">Goodreads Bookshelf</h3>
+        <p style="line-height:1.2; margin-bottom:8px">
+            I love goodreads, but it has a terrible UI and a discontinued API. Here is a rolling  <br/> 
+            list of the last 12 months, with older shelves viewable
+            <a href="https://www.goodreads.com/review/list/59767262-bay-gross?order=d&sort=review&view=reviews"><b>here</b></a>.
+            Add me as a friend!
+        </p>
+    </div>
+
+
+    <div id='projects' class='container' style="padding-top:10px">
+
+        <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+        <style type="text/css" media="screen">
+            .gr_custom_container_1641096049 {
+              /* customize your Goodreads widget container here*/
+              border: 1px solid gray;
+              border-radius:10px;
+              padding: 10px 5px 10px 5px;
+              background-color: #FFFFFF;
+              color: #000000;
+              max-width:560px;
+            }
+            .gr_custom_header_1641096049 {
+              /* customize your Goodreads header here*/
+              border-bottom: 1px solid gray;
+              width: 100%;
+              margin-bottom: 5px;
+              text-align: center;
+              font-size: 80%;
+              display:none;
+            }
+            .gr_custom_each_container_1641096049 {
+              /* customize each individual book container here */
+              width: 100%;
+              clear: both;
+              margin-bottom: 10px;
+              overflow: auto;
+              padding:10px;
+              padding-bottom: 4px;
+              border-bottom: 1px solid #aaa;
+              font-size:0.9em;
+              line-height:1.2;
+            }
+            .gr_custom_each_container_1641096049:nth-of-type(n+50){display:none}
+
+            .gr_custom_book_container_1641096049 {
+              /* customize your book covers here */
+              overflow: hidden;
+              height: 130px;
+                float: right;
+                margin-left: 10px;
+                width: 80px;
+            }
+            .gr_custom_author_1641096049 a{
+              /* customize your author names here */
+              font-size: 0.8em;
+              line-height:2;
+              color: #000;
+            }
+            .gr_custom_title_1641096049 a{
+                color:#000;
+                font-weight:bold;
+                line-height:1.6;
+            }
+            
+            .gr_custom_tags_1641096049 {
+              /* customize your tags here */
+              font-size: 10px;
+              color: gray;
+            }
+            .gr_custom_rating_1641096049 {
+              /* customize your rating stars here */
+              float: right;
+              filter: ; 
+              filter: grayscale(30%)  hue-rotate(290deg) brightness(120%);
+              margin-right:5px
+            }
+            .gr_custom_container_1641096049 center{
+                display:none
+            }
+        </style>
+      
+      <div id="gr_custom_widget_1641096049">
+        <div class="gr_custom_container_1641096049">
+          <h2 class="gr_custom_header_1641096049">
+            <a
+              style="text-decoration: none"
+              rel="nofollow"
+              href="https://www.goodreads.com/review/list/59767262-bay-gross?shelf=read&amp;utm_medium=api&amp;utm_source=custom_widget"
+              >Bay&#39;s Bookshelf</a
+            >
+          </h2>
+          <div class="gr_custom_each_container_1641096049">
+            <div class="gr_custom_book_container_1641096049">
+              <a
+                title="A History of Western Philosophy"
+                rel="nofollow"
+                href="https://www.goodreads.com/review/show/4398924952?utm_medium=api&amp;utm_source=custom_widget"
+                ><img
+                  alt="A History of Western Philosophy"
+                  border="0"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344399003l/243685._SX98_.jpg"
+              /></a>
+            </div>
+            <div class="gr_custom_rating_1641096049">
+              <span class="staticStars notranslate" title="liked it"
+                ><img
+                  alt="liked it"
+                  src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img
+                  alt=""
+                  src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img
+                  alt=""
+                  src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" /><img
+                  alt=""
+                  src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png" /><img
+                  alt=""
+                  src="https://s.gr-assets.com/images/layout/gr_red_star_inactive.png"
+              /></span>
+            </div>
+            <div class="gr_custom_title_1641096049">
+              <a
+                rel="nofollow"
+                href="https://www.goodreads.com/review/show/4398924952?utm_medium=api&amp;utm_source=custom_widget"
+                >A History of Western Philosophy</a
+              >
+            </div>
+            <div class="gr_custom_author_1641096049">
+              by
+              <a
+                rel="nofollow"
+                href="https://www.goodreads.com/author/show/17854.Bertrand_Russell"
+                >Bertrand Russell</a
+              >
+            </div>
+            <div class="gr_custom_review_1641096049">
+              If the longest thread in the western academy is the study of the Great
+              Books, then the second longest thread is probably hand-wringing over
+              ‘whether they matter’. Convenient anecdote: this week the Times and New
+              Yorker each had takes -- ...
+            </div>
+          </div>
+          <br style="clear: both" />
+          <center>
+            <a rel="nofollow" href="https://www.good#reads.com/"
+              ><img
+                alt="goodreads.com"
+                style="border: 0"
+                src="https://s.gr-assets.com/images/widget/widget_logo.gif"
+            /></a>
+          </center>
+        </div>
+      </div>
+      <script
+        src="https://www.goodreads.com/review/custom_widget/59767262.Bay's%20Bookshelf?cover_position=right&cover_size=medium&num_books=100&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1641096049&widget_text_color=000000&widget_title_size=small&widget_width=full"
+        type="text/javascript"
+        charset="utf-8"
+      ></script>
+    </div> <!-- projects -->
+</div> <!-- wrapper --> 
+</body>
